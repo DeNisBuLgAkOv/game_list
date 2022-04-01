@@ -1,0 +1,160 @@
+@font-face{
+    font-family: Ubuntu;
+    src: url("/font/Ubuntu-Regular.ttf");
+        
+}
+@font-face{
+    font-family: Ubuntu_condensed;
+    src: url("/font/UbuntuCondensed-Regular.ttf");
+        
+}
+
+
+
+body{
+    height: 100%;
+    padding:0;
+    margin: 0;
+}
+p{
+    margin: 0;
+}
+.main{
+    width: 100%;
+    height: 100%;
+    background-color:#5a5a5a;
+    min-height: 100vh;
+}
+
+.wrapper{
+    
+    
+    padding-top: 90px;
+    display: flex;
+    
+    justify-content: center;
+}
+.game_list{
+   
+  
+    text-align: center;
+    width: 50%;
+    display: inline-block;
+    
+  
+}
+
+img{
+    width: 150px;
+    height: 210px;
+}
+.block{
+    
+ 
+    align-items: center;
+    width: 190px;
+    text-align: center;
+    margin: 0 5px 0 5px;
+    display: inline-block;
+}
+.block > p:nth-child(3){
+    color: white;
+    white-space: normal;
+    position: relative;
+    bottom: 2px;
+    
+}
+.block > p:nth-child(4){
+    color: white;
+    position: relative;
+    bottom: 5px;
+    
+    
+}
+button{
+    width: 150px;
+    height: 30px;
+    background-color:#3c3d3d;
+    font-size: 16px;
+    color: #5bb9e5;
+    border:0;
+    outline: 0;
+    position: relative;
+    bottom: 4px;
+    
+}
+
+
+
+.basket{
+    width:250px;
+    background-color:#3c3d3d;
+    border-top: 10px solid #60ccff;
+    height: 400px;
+
+}
+.game{
+    color: white;
+}
+.container_basket{
+    width: 210px;
+    margin: 0 auto;
+}
+
+.container_basket > div:nth-child(1){
+    color: white;
+    font-size: 19px;
+    font-family: Ubuntu_condensed;
+}
+
+
+a{
+    color: #60ccff;
+}
+span{
+ 
+ color: #60ccff;
+ margin-left: 5px;
+ margin-right: 5px;
+}
+
+.span_price{
+    color: #949494;
+}
+.added_game{
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.container_basket >p:nth-child(3){
+    color: white;
+}
+
+
+.container_basket  .added_game:hover{
+    background-color:#5a5a5a;
+    
+    
+}
+
+.container_basket .added_game:hover .close{
+    display: block;
+    cursor: pointer;
+      
+}
+
+
+.close{
+    display: none;
+   
+}
+
+@media (max-width: 760px){
+  .wrapper{
+    flex-direction: column;
+  }
+.game_list{
+  margin: 0 auto;
+}
+}
